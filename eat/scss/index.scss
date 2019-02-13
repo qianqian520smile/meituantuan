@@ -1,0 +1,107 @@
+  @import '_minix.scss';
+  @import 'common.scss';
+  @import url(../fonts/iconfont.css);
+  .wrap {
+      width: 100%;
+      height: 100%;
+      @include box_flex;
+      @include direction(column);
+      background: #F9F9F9;
+  }
+  
+  header {
+      background: #fff;
+      height: pxTorem(44px);
+      width: 100%;
+      @include box_flex;
+      @include align;
+      @include justify(space-between);
+      padding: 0 pxTorem(15px);
+      @include sizing;
+      color: #000;
+      font-size: pxTorem(16px);
+      i.iconfont {
+          font-size: pxTorem(16px);
+          margin-left: pxTorem(5px);
+      }
+  }
+  
+  .quan {
+      border: 1px solid #ccc;
+      border-radius: pxTorem(25px);
+      padding: pxTorem(8px);
+  }
+  
+  section {
+      @include flex;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      //   background: pink;
+      .content {
+          width: 100%;
+      }
+  }
+  
+  nav {
+      text-align: center;
+      input {
+          width: 80%;
+          height: pxTorem(40px);
+          background: #ccc;
+          border-radius: pxTorem(25px);
+      }
+  }
+  
+  .swiper-container {
+      width: 100%;
+      margin-top: 20px;
+      .swiper-slide {
+          width: 100%;
+          height: pxTorem(200px);
+          //   background: lime;
+          @include box_flex;
+          flex-wrap: wrap;
+          dl {
+              @include box_flex;
+              width: 20%;
+              @include direction(column);
+              @include align;
+              img {
+                  border-radius: 50%;
+              }
+          }
+      }
+  }
+  
+  .bigimg {
+      width: 100%;
+      height: pxTorem(200px);
+      background: orangered;
+      img {
+          width: 100%;
+          height: pxTorem(200px);
+      }
+  }
+  
+  .orange {
+      color: orange;
+      border-bottom: 3px solid orange;
+  }
+  
+  footer {
+      @include box_flex;
+      background: lime;
+      height: pxTorem(45px);
+      dl {
+          @include flex;
+          @include box_flex;
+          width: pxTorem(33px);
+          @include direction(column);
+          @include align;
+          @include justify;
+          .iconfont {
+              font-size: pxTorem(20px);
+          }
+      }
+  }
